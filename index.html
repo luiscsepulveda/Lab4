@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+        <!-- Step 1: HTML File Setup (5 minutes)
+            Create a new HTML file named index.html. Add the necessary tags (<!DOCTYPE
+            html>, <html>, <head>, <body>, etc.).(DONE IT) -->
+    <header></header>
+    <main></main>
+    <!-- Step 2: Create a Basic Form (10 minutes)
+        Create a basic form with an action attribute of "http://example.com/submit_form".
+        This form should include:
+        1. A text input for a username.
+        2. A password input.
+        3. A submit button. (DONE IT) -->
+    <section class="form__container">
+        <form action="http://example.com/submit_form">
+            <br>
+            <fieldset class="fieldsets">
+                <legend>User Info:</legend>
+                <label for="username" >Username:</label><br>
+                <input type="text" id="username" name="username" placeholder="mrlouis2023" autofocus><br>
+                <label for="password">Pasword:</label><br>
+                <input type="password" id="password" name="password" placeholder="030988">
+                <input type="submit" value="Submit">
+            </fieldset>
+
+            <!-- Step 3: Exploring Input Types (25 minutes) -->
+            <!-- 1. Text and Password Input & placeholders -->
+            <!-- 2. Radio Buttons for gender and only one to be selected -->
+            <br>
+            <fieldset class="fieldsets">
+                <legend>Gender:</legend>
+                <input type="radio" id="male" name="fav_language" value="Male">
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="fav_language" value="Female">
+                <label for="female">Female</label><br>
+            </fieldset>
+
+            <!-- 3. Checkbox Inputs for Programming lenguages (DONE IT)-->
+            <fieldset class="fieldsets">
+                <legend>technical Skills:</legend>
+                <input type="checkbox" id="html" name="fav_language" value="HTML">
+                <label for="html">HTML</label><br>
+                <input type="checkbox" id="css" name="fav_language" value="CSS">
+                <label for="css">CSS</label><br>
+                <input type="checkbox" id="javascript" name="fav_language" value="JavaScript">
+                <label for="javascript">JavaScript</label><br>
+            </fieldset>
+
+            <!-- 4. File Input - profile picture  (DONE IT)-->
+            <fieldset class="fieldsets">
+                <legend>Profile picture:</legend>
+                <label for="myPic">Select a profile photo:</label>
+                <input type="file" id="myPic" name="myPic">
+            </fieldset>
+            <br>
+
+            <!-- 5. Date Input -->
+            <fieldset class="fieldsets">
+                <legend>Birthday:</legend>
+                <label for="bday">Your birthday:</label>
+                <input type="month" id="bday" name="bday">br
+            </fieldset>
+            <!-- 6. Email Input -->
+            <fieldset class="fieldsets">
+                <legend>Random Info:</legend>
+                <label for="email">Enter your email:</label>
+                <input type="email" id="email" name="email" placeholder="john.doe@gmail.com"><br>
+
+                <!-- 7. URL Input -->
+
+                <label for="homepage">Add your homepage:</label>
+                <input type="url" id="homepage" name="homepage"><br>
+
+                <!-- 8. Number Input for the age 18-99-->
+
+                <label for="age">Age (between 18 and 99):</label>
+                <input type="number" id="age" name="age" min="18" max="99" step="1"><br>
+
+                <!-- 9. Range Input range 0-10 -->
+
+                <label for="satisfaction">Satisfaction (between 0 and 10):</label>
+                <input type="range" id="satisfaction" name="satisfaction" min="0" max="10"><br>
+
+                <!-- Step 4: Advanced Usage of Form and Input Attributes (30 minutes)
+                        1. Using the pattern attribute ← (hint use regex)
+                        Add an additional text input field where users can input a US phone number. Use the
+                        pattern attribute to enforce the specific format: (123) 456-7890. -->
+
+                <label>
+                    Enter your phone number in the format (123) - 456 - 7890 (<input name="tel1" type="tel" pattern="[0-9]{3}"
+                        placeholder="xxx" aria-label="3-digit area code" size="2" />) -
+                    <input name="tel2" type="tel" pattern="[0-9]{3}" placeholder="xxx" aria-label="3-digit prefix" size="2" />
+                    -
+                    <input name="tel3" type="tel" pattern="[0-9]{4}" placeholder="xxxx" aria-label="4-digit number" size="3" />
+                </label>
+            </fieldset>
+
+
+
+
+
+
+        </form>
+    </section>
+    
+</body>
+</html>
